@@ -12,23 +12,24 @@
 
 <body>
 
+  <!-- Google Logo -->
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">
       <img src="img/logo.png" height="40" alt="">
     </a>
   </nav>
-  <nav>
-    <div class="navbar navbar-light bg-light nav nav-tabs b-flex justify-content-start" id="nav-tab" role="tablist">
-      <h3>Keyword</h3>
-      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-        aria-controls="nav-home" aria-selected="true">Home</a>
-      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-        aria-controls="nav-profile" aria-selected="false">Create</a>
-    </div>
-  </nav>
+  <!-- Nav with tabs -->
+  <div class="navbar navbar-light bg-light nav nav-tabs b-flex justify-content-start" id="nav-tab" role="tablist">
+    <h3 class="mr-5">Keyword</h3>
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+      aria-controls="nav-home" aria-selected="true">Home</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+      aria-controls="nav-profile" aria-selected="false">Create</a>
+  </div>
   <div class="tab-content" id="nav-tabContent">
     <!-- Tab para ver la lista de posts -->
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+    <div class="tab-pane fade show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
       <!-- Main Article -->
       <div class="container-fluid px-0 pb-3">
         <div class="row">
@@ -176,11 +177,34 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <!-- Tab para crear publicacion -->
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">tab create</div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <div class="container">
+        <div class="row">
+          <div class="col mt-3">
+            <form>
+
+              <!-- Title Area -->
+              <input class="w-100" type="text" placeholder="Your title goes here" id="title-textarea">
+
+              <!-- Header Image -->
+              <div class="form-group my-3">
+                <label for="exampleFormControlFile1">Select Headder Image</label>
+                <input type="file" class="form-control-file" id="header-image-selector">
+              </div>
+
+              <!-- Storie Text Area -->
+              <div class="form-group">
+                <textarea class="form-control h-75" id="story-text-area" rows="3"
+                  placeholder="Your history goes here..."></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Boostrap Scripts -->
